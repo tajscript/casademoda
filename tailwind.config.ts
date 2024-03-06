@@ -9,9 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'hero': "linear-gradient(90deg, rgba(137,148,153,1) 0%, rgba(255,255,255,1) 100%)"
+      },
+      colors: {
+        "casaSpecial": "#7fb2ad"
+      },
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        roboto: ['var(--font-roboto)'],
       },
     },
   },
