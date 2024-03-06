@@ -1,0 +1,19 @@
+.nav {
+    @apply h-[10vh] w-full
+}
+
+.wrapper {
+    @apply bg-casaSpecial text-white h-full w-[90%] mx-auto rounded-b-3xl flex flex-row justify-between px-2 items-center lg:px-10
+}
+
+.logo {
+    @apply w-24 h-24 sm:w-32 sm:h-32
+}
+
+.items {
+    @apply hidden sm:inline-block space-x-3 font-roboto
+}
+
+.icons {
+    @apply flex flex-row text-xl space-x-2
+}
