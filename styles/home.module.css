@@ -68,24 +68,32 @@
 }
 
 .product__index {
-    @apply h-96
+    @apply h-[27rem]
 }
 
 .product__index h2 {
-    @apply text-sm font-inter font-medium mt-2
+    @apply text-sm font-inter font-semibold mt-2
 }
 
 .product__index h4 {
-    @apply text-sm font-roboto
+    @apply text-sm font-roboto font-medium
+}
+
+.product__image__wrapper {
+    @apply h-96 overflow-hidden
 }
 
 .product__image {
-    @apply h-80 rounded-lg bg-white shadow-sm
+    @apply rounded-lg h-full bg-white shadow-sm transition-all ease-linear duration-300 hover:scale-125
 }
 
 /* Casa Section */
 .casa {
-    @apply bg-casaSpecial flex flex-row text-white font-roboto font-semibold py-2 overflow-hidden sm:py-3 
+    @apply bg-casaSpecial text-white font-roboto font-semibold py-2 overflow-hidden sm:py-3 
+}
+
+.casa__wrapper {
+    @apply flex flex-row justify-center
 }
 
 .casa h4 {
@@ -98,7 +106,7 @@
 }
 
 .banner__wrapper {
-    @apply relative h-[26rem] lg:h-[28rem] xl:h-[32rem] bg-cover bg-no-repeat rounded-2xl
+    @apply relative h-[27rem] lg:h-[28rem] xl:h-[32rem] bg-cover bg-no-repeat rounded-2xl
 }
 
 .banner__items {
@@ -115,7 +123,7 @@
 
 /* All Products section */
 .all__product {
-    @apply mt-24 sm:mt-32 w-[90%] mx-auto h-full xl:mt-44
+    @apply my-24 sm:mt-32 w-[90%] mx-auto h-full xl:mt-44
 }
 
 .all__product h3 {
@@ -123,5 +131,75 @@
 }
 
 .all__product p {
-    @apply text-sm text-gray-400 text-center font-inter sm:text-base
+    @apply text-sm text-gray-400 text-center font-inter sm:text-base lg:w-[60%] mx-auto
+}
+
+.filter {
+    @apply flex flex-row items-center justify-center gap-3 mt-3 mb-10 sm:gap-5
+}
+
+.filter button {
+    @apply font-roboto text-sm sm:text-base border border-black px-2 py-1 rounded-full transition-colors duration-300 ease-linear hover:bg-black hover:text-white
+}
+
+.all__wrapper {
+    @apply grid gap-5 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+}
+
+.all__image {
+    @apply h-96 rounded-lg bg-white border transition-all ease-linear duration-300 hover:scale-125
+}
+
+/* Contact Section */
+.contact {
+    @apply flex flex-col mx-auto mt-28 mb-16 gap-10 sm:flex-row w-[90%] justify-between sm:mt-36 border-t-2 border-black pt-10
+}
+
+.contact__wrapper {
+    @apply block
+}
+
+.contact__wrapper h3 {
+    @apply text-4xl font-roboto font-bold mb-5
+}
+
+.contact__wrapper p {
+    @apply text-gray-400 text-sm font-inter
+}
+
+.form { 
+    @apply mt-3 gap-2 flex flex-col md:flex-row md:gap-3
+}
+
+.form input {
+    @apply border-2 px-2 w-72 h-10 rounded-full focus:outline-none
+}
+
+.form button {
+    @apply bg-black text-white h-10 w-32 rounded-full
+}
+
+.contact__cont {
+    @apply flex flex-row gap-20 lg:gap-48
+}
+
+.contact__flex {
+    @apply flex flex-col items-start
+}
+
+.contact__flex h3 {
+    @apply text-lg font-semibold font-roboto mb-2
+}
+
+.contact__flex h5 {
+    @apply font-semibold font-roboto mt-2
+}
+
+.contact__link {
+    @apply text-gray-400 font-roboto
+}
+
+/* Story Section */
+.story__image {
+    @apply w-full h-[29rem]
 }

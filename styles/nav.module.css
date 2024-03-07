@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-    @apply bg-casaSpecial text-white h-full w-[90%] mx-auto rounded-b-3xl flex flex-row justify-between px-2 items-center lg:px-10
+    @apply bg-casaSpecial text-white h-full w-[90%] mx-auto rounded-b-3xl flex flex-row justify-between px-2 items-center lg:px-10 border-x-2 border-b-2 border-white
 }
 
 .logo {

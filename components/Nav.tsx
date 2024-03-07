@@ -17,7 +17,8 @@ const Nav = () => {
         <section className={style.items}>
             <Link href="/" className={style.item}>T-shirts</Link>
             <Link href="/" className={style.item}>Footwears</Link>
-            <Link href="/" className={style.item}>New Arrivals</Link>
+            <Link href="/" className={style.item}>Headwears</Link>
+            <Link href="/" className={style.item}>Glasses</Link>
         </section>
 
         <section className={style.icons}>

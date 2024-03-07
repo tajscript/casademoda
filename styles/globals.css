@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply p-0 m-0 box-border
+  }
+  
+  html {
+    @apply scroll-smooth
+  }
+
+
+/* Swiper */
+.swiper-button-next::after, .swiper-button-prev::after {
+    @apply text-casaSpecial hidden sm:block
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 30px !important ;
+    width: 40px;
+    height: 40px;
+}
