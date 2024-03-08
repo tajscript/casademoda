@@ -2,7 +2,7 @@ export default [
     {
         id: 1,
         title: "ZARA T-SHIRT WITH SLOGANS",
-        amount: "55,,000",
+        amount: "55,000",
         image: "/zara_slogans.jpg"
     },
     {
